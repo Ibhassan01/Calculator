@@ -11,9 +11,6 @@ body{
     height: 100%;
     background-color: var(--background-color);
 }
-/* *{
-    outline: 1px solid red;
-} */
 .toggle{
     margin: 20px 10px;
 }
@@ -50,16 +47,19 @@ input:checked + label{
     transition: .7s;
 }
 .display{
+    margin: 10px 5px 0 5px;
     padding: 40px 3% 40px 0;
     color: var(--display-color);
-    font-size: 5em;
+    font-size: 3em;
     text-align: end;
-    /* overflow-x: scroll;
-    scroll-behavior: smooth; */
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
     transition: 1s;
+    scrollbar-color: green;
 }
 .buttons{
-    margin-left: 7px;
+    margin:20px 0 20px 7px;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -74,7 +74,7 @@ input:checked + label{
     font-size: 1.5rem;
     color: var(--button-text-color);
     border-radius: 20px;
-    height: 80px;
+    padding: 30px 0;
     box-shadow: inset 5px 5px 5px #fef9f944,inset -5px -5px 5px #13121252;;
     background-color: var(--button-background-color);
     flex-basis: 24%;
@@ -88,7 +88,7 @@ input:checked + label{
     font-size: 1.5rem;
     color: var(--button-text-color);
     border-radius: 20px;
-    height: 80px;
+    padding: 30px 0;
     box-shadow: inset 5px 5px 5px #fef9f944,inset -5px -5px 5px #13121252;
     background-color: gray;
     flex-basis: 24%;
@@ -102,7 +102,7 @@ input:checked + label{
     color: var(--button-text-color);
     font-size: 1.5rem;
     border-radius: 20px;
-    height: 80px;
+    padding: 30px 0;
     box-shadow: inset 5px 5px 5px #fef9f944, inset -5px -5px 5px #13121252;;
     background-color: orange;
     flex-basis: 24%;
@@ -132,16 +132,19 @@ input:checked + label{
 
 @media only screen and (max-height:680px){
     .signs{
-        height: 60px;
+        height: 70px;
     }
     .top-signs{
-        height: 60px;
+        height: 70px;
     }
     .basic-signs{
-        height: 60px;
+        height: 70px;
     }
 }
 @media only screen and (min-height:700px){
+    .buttons{
+        margin:5px;
+    }
     .signs{
         height: 80px;
     }
@@ -152,10 +155,21 @@ input:checked + label{
         height: 80px;
     }
     .display{
-        padding: 30px 3% 30px 0;
+        margin: 10px 3% 10px 0;
     }
 }
 
+@media only screen and (min-height:800px){
+    .signs{
+        height: 100px;
+    }
+    .top-signs{
+        height: 100px;
+    }
+    .basic-signs{
+        height: 100px;
+    }
+}
 @media only screen and (min-height:840px){
     .signs{
         height: 90px;
@@ -185,6 +199,9 @@ input:checked + label{
     }
 }
 @media only screen and (min-height:1000px){
+    .buttons{
+        margin:50px 0;
+    }
     .signs{
         height: 120px;
     }
