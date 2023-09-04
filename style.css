@@ -158,6 +158,20 @@ input:checked + label{
         margin: 10px 3% 10px 0;
     }
 }
+@media only screen and (max-height:780px){
+    .buttons{
+        margin:5px;
+    }
+    .signs{
+        height: 80px;
+    }
+    .top-signs{
+        height: 80px;
+    }
+    .basic-signs{
+        height: 80px;
+    }
+}
 
 @media only screen and (min-height:800px){
     .signs{
