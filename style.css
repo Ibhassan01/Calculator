@@ -156,6 +156,7 @@ input:checked + label{
     }
     .display{
         margin: 10px 3% 10px 0;
+        font-size: 2rem;
     }
 }
 @media only screen and (max-height:780px){
@@ -170,6 +171,9 @@ input:checked + label{
     }
     .basic-signs{
         height: 80px;
+    }
+    .display{
+        font-size: 2rem;
     }
 }
 
@@ -210,6 +214,7 @@ input:checked + label{
     }
     .display{
         padding: 50px 3% 50px 0;
+        font-size: 2rem;
     }
 }
 @media only screen and (min-height:1000px){
